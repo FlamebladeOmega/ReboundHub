@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window
+    x:Class="ReboundHub.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ReboundHub"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <NavigationView x:Name="NView"
+                            PaneDisplayMode="Left"
+                            IsSettingsVisible="True"
+                            ItemInvoked="NavChange">
+        <NavigationView.MenuItems>
+            <NavigationViewItem Content="Home" Tag="Home">
+                <NavigationViewItem.Icon>
+                    <FontIcon Glyph="&#xE80F;" />
+                </NavigationViewItem.Icon>
+            </NavigationViewItem>
+
+            <NavigationViewItem Content="UI Gallery" Tag="UIGallery">
+                <NavigationViewItem.Icon>
+                    <FontIcon Glyph="&#xF7ED;" />
+                </NavigationViewItem.Icon>
+            </NavigationViewItem>
+            <NavigationViewItem Content="CrimsonUI" Tag="CrimsonUI">
+                <NavigationViewItem.Icon>
+                    <FontIcon Glyph="&#xF246;" />
+                </NavigationViewItem.Icon>
+            </NavigationViewItem>
+            <NavigationViewItem Content="Ivirus Community" Tag="IvirusCommunity">
+                <NavigationViewItem.Icon>
+                    <FontIcon Glyph="&#xE7EE;" />
+                </NavigationViewItem.Icon>
+            </NavigationViewItem>
+            <NavigationViewItem Content="Rebound11" Tag="Rebound11">
+                <NavigationViewItem.Icon>
+                    <FontIcon Glyph="&#xEC76;" />
+                </NavigationViewItem.Icon>
+            </NavigationViewItem>
+
+        </NavigationView.MenuItems>
+        <NavigationView.FooterMenuItems>
+            <NavigationViewItem Content="Control Panel" Tag="ControlPanel" >
+                <NavigationViewItem.Icon>
+                    <FontIcon Glyph="&#xE9D9;" />
+                </NavigationViewItem.Icon>
+            </NavigationViewItem>
+        </NavigationView.FooterMenuItems>
+        <Frame x:Name="ContentFrame" />
+    </NavigationView>
+</Window>
